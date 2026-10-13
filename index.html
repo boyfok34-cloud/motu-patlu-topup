@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মটু পাতলু টপ-আপ - Free Fire Diamond Top-Up</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-100 antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- Top Navigation Bar -->
+    <header class="bg-[#1e293b]/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-r from-orange-500 to-amber-500 text-slate-950 font-black px-4 py-2 rounded-xl text-xl tracking-wide shadow-md flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-yellow-300"></i> মটু পাতলু <span class="text-xs bg-slate-950 text-orange-400 px-2 py-0.5 rounded-md">TopUp</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="#" class="text-orange-400 hover:text-orange-300 transition">হোম</a>
+                <a href="#packages" class="text-slate-300 hover:text-orange-400 transition">টপ-আপ</a>
+                <a href="#support" class="text-slate-300 hover:text-orange-400 transition">হেল্পলাইন</a>
+            </div>
+            <div class="space-x-2">
+                <button class="bg-slate-800 hover:bg-slate-700 text-orange-400 border border-slate-700 px-4 py-2 rounded-xl text-sm font-semibold transition shadow-sm">লগইন</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Scrolling Notice -->
+    <div class="bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-bold text-sm py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex items-center gap-2">
+            <i class="fa-solid fa-bullhorn animate-bounce"></i>
+            <marquee scrollamount="5">⚠️ ডায়মন্ড অর্ডার করার আগে আমাদের নাম্বারে (01997731007) বিকাশ বা নগদ সেন্ড মানি করুন। তারপর ফর্ম পূরণ করে সাবমিট করুন!</marquee>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        
+        <!-- Hero Banner Card -->
+        <div class="relative bg-gradient-to-br from-orange-600 via-amber-600 to-yellow-600 rounded-3xl p-8 shadow-2xl mb-10 overflow-hidden border border-orange-400/30">
+            <div class="absolute -right-10 -bottom-10 opacity-20 text-9xl font-black">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="relative z-10 text-center md:text-left">
+                <span class="bg-slate-950/40 text-yellow-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-yellow-300/30">নম্বর ১ ট্রাস্টেড টপ-আপ সাইট</span>
+                <h1 class="text-3xl md:text-4xl font-black mt-3 mb-2 text-white">ফ্রি ফায়ার ডায়মন্ড টপ-আপ বিডি</h1>
+                <p class="text-orange-100 text-sm md:text-base max-w-xl">সবচেয়ে কম মূল্যে এবং নিরাপদ সার্ভারের মাধ্যমে ইনস্ট্যান্ট ডায়মন্ড ও মেম্বারশিপ নিন।</p>
+            </div>
+        </div>
+
+        <!-- Order Form Box -->
+        <div class="bg-[#1e293b] border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl relative">
+            
+            <form id="topupForm" onsubmit="handleOrder(event)" class="space-y-8">
+                
+                <!-- Step 1: UID -->
+                <div>
+                    <label class="block text-sm font-bold mb-2 text-orange-400 flex items-center gap-2">
+                        <span class="bg-orange-500 text-slate-950 w-6 h-6 rounded-full inline-flex items-center justify-center text-xs font-black">১</span> 
+                        প্লেয়ার আইডি (Player UID) দিন
+                    </label>
+                    <div class="relative">
+                        <input type="text" id="playerId" required placeholder="উদাহরণ: 1234567890" 
+                            class="w-full bg-[#0f172a] border border-slate-700 rounded-2xl px-5 py-4 text-white placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition text-lg">
+                        <div class="absolute right-4 top-4 text-slate-500">
+                            <i class="fa-solid fa-user-shield text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Discounted Packages (Updated Prices) -->
+                <div id="packages">
+                    <label class="block text-sm font-bold mb-3 text-orange-400 flex items-center gap-2">
+                        <span class="bg-orange-500 text-slate-950 w-6 h-6 rounded-full inline-flex items-center justify-center text-xs font-black">২</span> 
+                        প্যাকেজ সিলেক্ট করুন (সুপার ডিসকাউন্ট)
+                    </label>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        
+                        <!-- Pkg 1 -->
+                        <label class="cursor-pointer border border-slate-700 bg-[#0f172a] hover:border-orange-500 p-4 rounded-2xl transition flex flex-col justify-between group relative overflow-hidden">
+                            <div class="absolute top-0 right-0 bg-orange-500 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded-bl-xl">অফার</div>
+                            <div>
+                                <input type="radio" name="package" value="25" class="accent-orange-500 mb-2" required>
+                                <span class="font-bold block text-base group-hover:text-orange-400 transition">২৫ ডায়মন্ড</span>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs text-slate-500 line-through">৳ ২৫</span>
+                                <span class="text-orange-400 font-extrabold text-lg block">৳ ২০.০০</span>
+                            </div>
+                        </label>
+
+                        <!-- Pkg 2 -->
+                        <label class="cursor-pointer border border-slate-700 bg-[#0f172a] hover:border-orange-500 p-4 rounded-2xl transition flex flex-col justify-between group">
+                            <div>
+                                <input type="radio" name="package" value="115" class="accent-orange-500 mb-2">
+                                <span class="font-bold block text-base group-hover:text-orange-400 transition">১০০ + ১৫ ডায়মন্ড</span>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs text-slate-500 line-through">৳ ৯০</span>
+                                <span class="text-orange-400 font-extrabold text-lg block">৳ ৭০.০০</span>
+                            </div>
+                        </label>
+
+                        <!-- Pkg 3 -->
+                        <label class="cursor-pointer border border-slate-700 bg-[#0f172a] hover:border-orange-500 p-4 rounded-2xl transition flex flex-col justify-between group">
+                            <div>
+                                <input type="radio" name="package" value="240" class="accent-orange-500 mb-2">
+                                <span class="font-bold block text-base group-hover:text-orange-400 transition">২১০ + ৩০ ডায়মন্ড</span>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs text-slate-500 line-through">৳ ১৭০</span>
+                                <span class="text-orange-400 font-extrabold text-lg block">৳ ১৩৫.০০</span>
+                            </div>
+                        </label>
+
+                        <!-- Pkg 4 (Weekly - 140 BDT) -->
+                        <label class="cursor-pointer border border-slate-700 bg-[#0f172a] hover:border-orange-500 p-4 rounded-2xl transition flex flex-col justify-between group relative overflow-hidden">
+                            <div class="absolute top-0 right-0 bg-yellow-400 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded-bl-xl">হট সেল</div>
+                            <div>
+                                <input type="radio" name="package" value="weekly" class="accent-orange-500 mb-2">
+                                <span class="font-bold block text-base group-hover:text-orange-400 transition">Weekly Membership</span>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs text-slate-500 line-through">৳ ১৬৫</span>
+                                <span class="text-orange-400 font-extrabold text-lg block">৳ ১৪০.০০</span>
+                            </div>
+                        </label>
+
+                        <!-- Pkg 5 (Monthly - 660 BDT) -->
+                        <label class="cursor-pointer border border-slate-700 bg-[#0f172a] hover:border-orange-500 p-4 rounded-2xl transition flex flex-col justify-between group relative overflow-hidden">
+                            <div class="absolute top-0 right-0 bg-orange-500 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded-bl-xl">বেস্ট অফার</div>
+                            <div>
+                                <input type="radio" name="package" value="monthly" class="accent-orange-500 mb-2">
+                                <span class="font-bold block text-base group-hover:text-orange-400 transition">Monthly Membership</span>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs text-slate-500 line-through">৳ ৭৫০</span>
+                                <span class="text-orange-400 font-extrabold text-lg block">৳ ৬৬০.০০</span>
+                            </div>
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Step 3: Payment & Send Money Instructions -->
+                <div class="bg-[#0f172a] p-5 rounded-2xl border border-slate-700/80 space-y-4">
+                    <label class="block text-sm font-bold text-orange-400 flex items-center gap-2">
+                        <span class="bg-orange-500 text-slate-950 w-6 h-6 rounded-full inline-flex items-center justify-center text-xs font-black">৩</span> 
+                        পেমেন্ট পদ্ধতি (সেন্ড মানি সিস্টেম)
+                    </label>
+                    
+                    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-sm space-y-2">
+                        <p class="text-slate-300">📌 প্রথমে নিচের নাম্বারে আপনার বিকাশ বা নগদ থেকে টাকা **Send Money** করুন:</p>
+                        <div class="flex items-center justify-between bg-slate-900 p-3 rounded-lg border border-slate-700">
+                            <span class="font-mono font-bold text-yellow-400 text-base">01997731007</span>
+                            <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded font-semibold">বিকাশ / নগদ (Personal)</span>
+                        </div>
+                    </div>
+
+                    <!-- Payment Number Selection -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <label class="flex items-center justify-center space-x-2 bg-slate-900 p-3 rounded-xl border border-slate-700 cursor-pointer hover:border-orange-500 transition">
+                            <input type="radio" name="paymentMethod" value="bkash" class="accent-orange-500" checked>
+                            <span class="font-bold text-pink-500 text-sm">বিকাশ (bKash)</span>
+                        </label>
+                        <label class="flex items-center justify-center space-x-2 bg-slate-900 p-3 rounded-xl border border-slate-700 cursor-pointer hover:border-orange-500 transition">
+                            <input type="radio" name="paymentMethod" value="nagad" class="accent-orange-500">
+                            <span class="font-bold text-orange-500 text-sm">নগদ (Nagad)</span>
+                        </label>
+                    </div>
+
+                    <!-- TrxID Input -->
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-slate-400">টাকা পাঠানোর পর ট্রানজেকশন আইডি (TrxID) এখানে দিন:</label>
+                        <input type="text" id="trxId" required placeholder="উদাহরণ: 9H74K2..." 
+                            class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-orange-500 transition text-sm">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-slate-950 font-black py-4 rounded-2xl text-lg shadow-xl hover:shadow-orange-500/20 transition transform active:scale-98">
+                    অর্ডার কনফার্ম করুন <i class="fa-solid fa-circle-chevron-right ml-2"></i>
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer id="support" class="bg-[#0b1120] border-t border-slate-800 text-center py-8 mt-16 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-orange-400 hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i> ফেসবুক পেজ</a>
+                <a href="#" class="text-orange-400 hover:text-white transition"><i class="fa-brands fa-telegram text-xl"></i> টেলিগ্রাম গ্রুপ</a>
+            </div>
+            <p>© ২০২৬ মটু পাতলু টপ-আপ | সর্বস্বত্ব সংরক্ষিত</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleOrder(e) {
+            e.preventDefault();
+            const uid = document.getElementById('playerId').value;
+            const trxId = document.getElementById('trxId').value;
+            
+            if(!uid || !trxId) {
+                alert('দয়া করে গেম ইউআইডি এবং সঠিক TrxID দিন!');
+                return;
+            }
+            alert('ধন্যবাদ! আপনার অর্ডারটি সফলভাবে সাবমিট হয়েছে। পেমেন্ট যাচাই করে দ্রুত আপনার আইডিতে ডায়মন্ড বা মেম্বারশিপ যুক্ত করা হবে।');
+            document.getElementById('topupForm').reset();
+        }
+    </script>
+</body>
+</html>
